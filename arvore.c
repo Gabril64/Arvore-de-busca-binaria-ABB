@@ -74,7 +74,7 @@ NoArv* remover(NoArv *raiz, int chave) {
         if (raiz->valor == chave) {
             if (raiz->esquerda == NULL && raiz->direita == NULL) {
                 free(raiz);
-                printf("Folha removida: %d!\n", chave);
+                printf("Folha removida: %d !\n", chave);
                 return NULL;
             } else if (raiz->esquerda != NULL && raiz->direita != NULL) {
                 NoArv *pontaux = raiz->esquerda;
